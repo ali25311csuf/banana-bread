@@ -7,15 +7,6 @@
 * main.cpp: call test cases defined and implemented in test class to test application in multiple testing levels.
 
 ## 1.2 STRUCTURE:
-## 1. ORGANIZATION:
-##### 1.1 DIRECTORY:
-* const.h: define all constants needed for program: players/AI movements and signs, etc.
-* matrix.h and .cpp: define matrix operator of set/get elements values, crossed events
-* tictactoe.h and .cpp: define all board game operators: draw board, show instruction, AI playing features
-* test.h and .cpp: implement test plan that illustrated in part 2 (below)
-* main.cpp: call test cases defined and implemented in test class to test application in multiple testing levels.
-
-## 1.2 STRUCTURE:
 ```
   +--------------------------------------+        +-------------------------------------------------------------+
 +>|class <type T> Matrix                 |<--+ =>>|class Tictactoe                                              |
@@ -79,45 +70,6 @@
   * 3.2 Compile and run with command make clean
 
 ## 4 WORK CITED:
-  *  4.1.“Minimax Algorithm in Game Theory: Set 1 (Introduction).” GeeksforGeeks, 24 Nov. 2021, https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/. 
-  * 4.2.“Templates in C++.” GeeksforGeeks, 28 Jun. 2021, https://www.geeksforgeeks.org/templates-cpp/. 
-  *  4.3.“Multidimensional Arrays in C / C++.” GeeksforGeeks, 20 Oct. 2021, *  https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/. 
-  *  4.4.“How to Play Tic-Tac-Toe.” The Spruce Crafts, 12 May. 2020, https://www.thesprucecrafts.com/tic-tac-toe-game-rules-412170.
-  *  4.5.“TicTacTo-with-AI.” Github, Prajwan-P, 29 Aug. 2020, https://github.com/Prajwal-P/TicTacToe-with-AI.
-  * 4.6."Minimax Algorithm." Educba.com, Priya Pedamkar, 2020, https://www.educba.com/minimax-algorithm/
-
-## 2 TEST PLAN:
-#### 2.1 Unit test at matrix class
-  - check element at (row, column) position
-  - check element at (index) position
-  - assign a value to an element at (row, column) position
-  - assign a value to an element at (index) position
-    
-#### 2.2 Integration Test At Tic-Tac-Toe Class
-  - initialize the board value and test by:
-    + check element at (row, column) position is empty or not
-    + check element at (index) position is empty or not
-  - test to see if there is any VALID crossed event along:
-    + row
-    + column
-    + diagonal
-
-## 2.3 System and Acceptance Test at Tic-Tac-Toe Class
-  - call and run game at option that player plays firstly.
-  - call and run game with option that AI plays firstly.
-  - these 2 options are testing under acceptances conditions of:
-    + is the board drawing ok?
-    + is all board's initialized values are okay to be filled in
-    + at any moment, the board check for:
-      * VALID movement of player
-      * AI can move freely and place VALID movement
-      * AI can play fairly and can beat player with good intelligence of win or draw result
-
- ## 3 INSTRUCTIONS TO RUN:
-  * 3.1 Download the zip file, unzip file and open Terminal at that unzipped folder
-  * 3.2 Compile and run with command make clean
-
- ## 4 WORK CITED:
   *  4.1.“Minimax Algorithm in Game Theory: Set 1 (Introduction).” GeeksforGeeks, 24 Nov. 2021, https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/. 
   * 4.2.“Templates in C++.” GeeksforGeeks, 28 Jun. 2021, https://www.geeksforgeeks.org/templates-cpp/. 
   *  4.3.“Multidimensional Arrays in C / C++.” GeeksforGeeks, 20 Oct. 2021, *  https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/. 
